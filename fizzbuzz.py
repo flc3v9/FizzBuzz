@@ -4,16 +4,23 @@
 def main():
 
     x=1
-    while x < 101:
-        if(x % 3 == 0):
-            print("fizz")
+
+    while (x < 101):
+        if(x % 15 == 0):
+            print("fizzbuzz")
+            x+=1
+            continue
         elif(x % 5 == 0):
             print("buzz")
-        elif(x % 5 == 0 and x % 3 == 0):
-            print("fizzbuzz")
+            x+=1
+            continue
+        elif(x % 3 == 0):
+            print("fizz")
+            x+=1
+            continue
         else:
             print(x)
-        x += 1
+            x+=1
 
 
 main()
