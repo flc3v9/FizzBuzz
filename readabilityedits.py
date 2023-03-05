@@ -2,7 +2,7 @@
 def main():
 
     for number in range(1,101):
-        if(number % 3 == 0 and number % 5 == 0): # checks if number is divisible by both 5 and 3
+        if(number % 15 == 0): # checks if number is divisible by both 5 and 3
             print("FizzBuzz")
             continue
         elif(number % 3 == 0): # checks if number is divisible by 3 and then prints Fizz
